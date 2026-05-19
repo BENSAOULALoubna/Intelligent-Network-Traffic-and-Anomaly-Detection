@@ -5,8 +5,8 @@ Multi-class congestion classification on simulated network traffic data, using t
 ## Project Structure
 
 ```
-├── congestion_forecasting_notebook.ipynb   # Main notebook
-├── feature_list.csv                        # Engineered feature columns
+├── congestion_vf_forecasting_notebook.ipynb   # Main notebook
+├── feature_list (1).csv                        # Engineered feature columns
 ├── requirements.txt                        # Python dependencies
 └── README.md
 ```
