@@ -21,20 +21,11 @@
 
 ## 1. Prerequisites
 
-| Requirement | Version | Notes |
-|---|---|---|
-| Ubuntu | 22.04 / 24.04 LTS | WSL2 on Windows works |
-| Python | 3.10 + | System or pyenv |
-| pip | 23 + | `python3 -m pip install --upgrade pip` |
-| git | any | for cloning |
-| build-essential | any | `sudo apt install build-essential` |
-
-```bash
-sudo apt update && sudo apt install -y \
-    build-essential git curl wget \
-    python3 python3-pip python3-venv \
-    libxml2-dev zlib1g-dev
-```
+| Requirement     | Version | Notes                                                                      |
+|-----------------|---|----------------------------------------------------------------------------|
+| uv              | | pip alternative for more robust package and virtual environment management |
+| Python          | 3.10 + |
+| git             | any | for cloning                                                                |
 
 ---
 
@@ -130,7 +121,7 @@ opp_env shell omnetpp-6.0.3 inet-4.5.2 -- bash -c \
     │   ├── omnetpp.ini         ← master config (all training + realtime configs)
     │   └── base.ini            ← shared parameters included by omnetpp.ini
     ├── src/
-    │   ├── DataExporter.cc     ← sends JSON records over TCP + writes JSONL
+    │   ├── DataExporter.cc     ← sends JSON records + writes JSONL
     │   ├── DataExporter.h
     │   ├── DataExporter.ned
     │   └── ...                 ← other modules
@@ -464,7 +455,7 @@ joblib.dump(clf,    "models/congestion_clf.pkl")
 ```
 OMNeT++ netsim binary
         │
-        │  JSON records over TCP :5001  (primary)
+        │  
         │  JSONL append to results/*.jsonl  (fallback)
         ▼
   dashboard.py  (DataStore — single shared deque)
@@ -493,17 +484,6 @@ ls /home/opp_env/default_workspace/netsim/netsim
 # If missing → re-run Section 6 (make)
 ```
 
-### TCP not connecting / dashboard shows "Waiting"
-```bash
-# Check port is open
-ss -tlnp | grep 5001
-
-# Check DataExporter connects to correct host/port
-# In DataExporter.cc look for: connectAddress and connectPort parameters
-# In base.ini ensure:
-# *.dataExporter.connectAddress = "127.0.0.1"
-# *.dataExporter.connectPort    = 5001
-```
 
 ### All metrics are zero
 The field names in the dashboard must match exactly what DataExporter writes.
@@ -527,7 +507,3 @@ echo $INET_ROOT    # should be non-empty
 ```bash
 pip install dash plotly joblib scikit-learn numpy pandas
 ```
-
----
-
-*Generated for the NetSim project — update Section 10.2 feature list to match your actual DataExporter JSON keys.*
