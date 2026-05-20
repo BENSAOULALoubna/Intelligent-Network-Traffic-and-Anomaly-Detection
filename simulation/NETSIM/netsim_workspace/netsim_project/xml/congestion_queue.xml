@@ -1,0 +1,16 @@
+<scenario>
+  <!-- At 300s: increase FTTH video load 10x — floods the ISP link -->
+  <at t="300">
+    <set-param module="isp_ftth0.ftth.host[*].app[0]"
+               par="thinkTime" value="exponential(0.1s)" />
+    <set-param module="isp_ftth0.ftth.host[*].app[0]"
+               par="idleInterval" value="exponential(1s)" />
+  </at>
+  <!-- At 900s: restore normal load -->
+  <at t="900">
+    <set-param module="isp_ftth0.ftth.host[*].app[0]"
+               par="thinkTime" value="exponential(1s)" />
+    <set-param module="isp_ftth0.ftth.host[*].app[0]"
+               par="idleInterval" value="exponential(20s)" />
+  </at>
+</scenario>

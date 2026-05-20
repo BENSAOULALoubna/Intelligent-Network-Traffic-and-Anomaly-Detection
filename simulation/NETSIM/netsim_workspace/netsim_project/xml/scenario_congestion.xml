@@ -1,0 +1,36 @@
+<scenario>
+<!-- Labels cycle every 1200s so 2-day sim has dense labeled windows -->
+<!-- CYCLE 1 -->
+<at t="120">  <set-param module="NetworkTopology.dataExporter" par="congestionLabel" value="1"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="congestion_queue"/> </at>
+<at t="240">  <set-param module="NetworkTopology.dataExporter" par="congestionLabel" value="0"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="normal"/> </at>
+<at t="300">  <set-param module="NetworkTopology.dataExporter" par="congestionLabel" value="2"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="congestion_incast"/> </at>
+<at t="360">  <set-param module="NetworkTopology.dataExporter" par="congestionLabel" value="0"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="normal"/> </at>
+<at t="420">  <set-param module="NetworkTopology.dataExporter" par="congestionLabel" value="3"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="congestion_burst"/> </at>
+<at t="480">  <set-param module="NetworkTopology.dataExporter" par="congestionLabel" value="0"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="normal"/> </at>
+<at t="540">  <set-param module="NetworkTopology.dataExporter" par="congestionLabel" value="4"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="congestion_periodic"/> </at>
+<at t="600">  <set-param module="NetworkTopology.dataExporter" par="congestionLabel" value="0"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="normal"/> </at>
+<at t="660">  <set-param module="NetworkTopology.dataExporter" par="congestionLabel" value="5"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="congestion_linkfail"/> </at>
+<at t="720">  <set-param module="NetworkTopology.dataExporter" par="congestionLabel" value="0"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="normal"/> </at>
+<!-- CYCLE 2 -->
+<at t="1320"> <set-param module="NetworkTopology.dataExporter" par="congestionLabel" value="1"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="congestion_queue"/> </at>
+<at t="1440"> <set-param module="NetworkTopology.dataExporter" par="congestionLabel" value="0"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="normal"/> </at>
+<at t="1500"> <set-param module="NetworkTopology.dataExporter" par="congestionLabel" value="2"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="congestion_incast"/> </at>
+<at t="1560"> <set-param module="NetworkTopology.dataExporter" par="congestionLabel" value="0"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="normal"/> </at>
+<at t="1620"> <set-param module="NetworkTopology.dataExporter" par="congestionLabel" value="3"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="congestion_burst"/> </at>
+<at t="1680"> <set-param module="NetworkTopology.dataExporter" par="congestionLabel" value="0"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="normal"/> </at>
+<at t="1740"> <set-param module="NetworkTopology.dataExporter" par="congestionLabel" value="4"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="congestion_periodic"/> </at>
+<at t="1800"> <set-param module="NetworkTopology.dataExporter" par="congestionLabel" value="0"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="normal"/> </at>
+<at t="1860"> <set-param module="NetworkTopology.dataExporter" par="congestionLabel" value="5"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="congestion_linkfail"/> </at>
+<at t="1920"> <set-param module="NetworkTopology.dataExporter" par="congestionLabel" value="0"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="normal"/> </at>
+<!-- CYCLE 3 -->
+<at t="2520"> <set-param module="NetworkTopology.dataExporter" par="congestionLabel" value="1"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="congestion_queue"/> </at>
+<at t="2640"> <set-param module="NetworkTopology.dataExporter" par="congestionLabel" value="0"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="normal"/> </at>
+<at t="2700"> <set-param module="NetworkTopology.dataExporter" par="congestionLabel" value="2"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="congestion_incast"/> </at>
+<at t="2760"> <set-param module="NetworkTopology.dataExporter" par="congestionLabel" value="0"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="normal"/> </at>
+<at t="2820"> <set-param module="NetworkTopology.dataExporter" par="congestionLabel" value="3"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="congestion_burst"/> </at>
+<at t="2880"> <set-param module="NetworkTopology.dataExporter" par="congestionLabel" value="0"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="normal"/> </at>
+<at t="2940"> <set-param module="NetworkTopology.dataExporter" par="congestionLabel" value="4"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="congestion_periodic"/> </at>
+<at t="3000"> <set-param module="NetworkTopology.dataExporter" par="congestionLabel" value="0"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="normal"/> </at>
+<at t="3060"> <set-param module="NetworkTopology.dataExporter" par="congestionLabel" value="5"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="congestion_linkfail"/> </at>
+<at t="3120"> <set-param module="NetworkTopology.dataExporter" par="congestionLabel" value="0"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="normal"/> </at>
+</scenario>
