@@ -1,0 +1,34 @@
+<scenario>
+<!-- Scan labels cycle every 1200s -->
+<!-- CYCLE 1 -->
+<at t="150">  <set-param module="NetworkTopology.dataExporter" par="scanLabel" value="1"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="scan_horizontal"/> </at>
+<at t="270">  <set-param module="NetworkTopology.dataExporter" par="scanLabel" value="0"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="normal"/> </at>
+<at t="350">  <set-param module="NetworkTopology.dataExporter" par="scanLabel" value="2"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="scan_vertical"/> </at>
+<at t="470">  <set-param module="NetworkTopology.dataExporter" par="scanLabel" value="0"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="normal"/> </at>
+<at t="550">  <set-param module="NetworkTopology.dataExporter" par="scanLabel" value="3"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="scan_block"/> </at>
+<at t="670">  <set-param module="NetworkTopology.dataExporter" par="scanLabel" value="0"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="normal"/> </at>
+<at t="750">  <set-param module="NetworkTopology.dataExporter" par="scanLabel" value="4"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="scan_stealth"/> </at>
+<at t="1050"> <set-param module="NetworkTopology.dataExporter" par="scanLabel" value="0"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="normal"/> </at>
+<at t="1100"> <set-param module="NetworkTopology.dataExporter" par="scanLabel" value="5"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="scan_distributed"/> </at>
+<at t="1200"> <set-param module="NetworkTopology.dataExporter" par="scanLabel" value="0"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="normal"/> </at>
+<!-- CYCLE 2 -->
+<at t="1350"> <set-param module="NetworkTopology.dataExporter" par="scanLabel" value="1"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="scan_horizontal"/> </at>
+<at t="1470"> <set-param module="NetworkTopology.dataExporter" par="scanLabel" value="0"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="normal"/> </at>
+<at t="1550"> <set-param module="NetworkTopology.dataExporter" par="scanLabel" value="2"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="scan_vertical"/> </at>
+<at t="1670"> <set-param module="NetworkTopology.dataExporter" par="scanLabel" value="0"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="normal"/> </at>
+<at t="1750"> <set-param module="NetworkTopology.dataExporter" par="scanLabel" value="3"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="scan_block"/> </at>
+<at t="1870"> <set-param module="NetworkTopology.dataExporter" par="scanLabel" value="0"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="normal"/> </at>
+<at t="1950"> <set-param module="NetworkTopology.dataExporter" par="scanLabel" value="4"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="scan_stealth"/> </at>
+<at t="2250"> <set-param module="NetworkTopology.dataExporter" par="scanLabel" value="0"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="normal"/> </at>
+<at t="2300"> <set-param module="NetworkTopology.dataExporter" par="scanLabel" value="5"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="scan_distributed"/> </at>
+<at t="2400"> <set-param module="NetworkTopology.dataExporter" par="scanLabel" value="0"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="normal"/> </at>
+<!-- CYCLE 3 -->
+<at t="2550"> <set-param module="NetworkTopology.dataExporter" par="scanLabel" value="1"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="scan_horizontal"/> </at>
+<at t="2670"> <set-param module="NetworkTopology.dataExporter" par="scanLabel" value="0"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="normal"/> </at>
+<at t="2750"> <set-param module="NetworkTopology.dataExporter" par="scanLabel" value="2"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="scan_vertical"/> </at>
+<at t="2870"> <set-param module="NetworkTopology.dataExporter" par="scanLabel" value="0"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="normal"/> </at>
+<at t="2950"> <set-param module="NetworkTopology.dataExporter" par="scanLabel" value="4"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="scan_stealth"/> </at>
+<at t="3250"> <set-param module="NetworkTopology.dataExporter" par="scanLabel" value="0"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="normal"/> </at>
+<at t="3300"> <set-param module="NetworkTopology.dataExporter" par="scanLabel" value="5"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="scan_distributed"/> </at>
+<at t="3500"> <set-param module="NetworkTopology.dataExporter" par="scanLabel" value="0"/> <set-param module="NetworkTopology.dataExporter" par="scenarioName" value="normal"/> </at>
+</scenario>

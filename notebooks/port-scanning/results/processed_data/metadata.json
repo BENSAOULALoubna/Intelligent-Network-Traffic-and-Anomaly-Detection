@@ -1,0 +1,47 @@
+{
+  "feature_cols": [
+    "temporal_scan_density",
+    "syn_rst_ratio",
+    "tcp_ctrl_bytes",
+    "total_syn",
+    "conn_failure_rate",
+    "syn_iat_cv",
+    "syn_regularity",
+    "lb_syn_300s",
+    "conn_completion_pct",
+    "total_fin",
+    "total_packets",
+    "syn_iat_mean_ms",
+    "syn_burst_ratio",
+    "failed_conns",
+    "lb_syn_60s",
+    "fan_out_ratio",
+    "port_scan_ratio",
+    "lookback_acceleration",
+    "proto_overhead_pct",
+    "syn_to_fin_ratio",
+    "node_isp_ftth0.ftth.gateway",
+    "node_isp_mobile0.mobile.gateway",
+    "node_isp_mobile1.mobile.gateway",
+    "node_isp_private0.private.gateway"
+  ],
+  "seq_len": 12,
+  "stride": 2,
+  "gap_threshold": 100,
+  "label_map": {
+    "0": 0,
+    "1": 1,
+    "2": 2,
+    "5": 3
+  },
+  "inv_label_map": {
+    "0": 0,
+    "1": 1,
+    "2": 2,
+    "3": 5
+  },
+  "n_train": 37517,
+  "n_val": 7654,
+  "n_test": 7401,
+  "n_feats": 24
+}

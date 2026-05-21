@@ -1,0 +1,20 @@
+<scenario>
+  <!-- At 600s: all private hosts simultaneously hammer the database server -->
+  <at t="600">
+    <set-param module="isp_private0.private.host[*].app[0]"
+               par="thinkTime" value="0s" />
+    <set-param module="isp_private0.private.host[*].app[0]"
+               par="idleInterval" value="0.01s" />
+    <set-param module="isp_private0.private.host[*].app[0]"
+               par="numRequestsPerSession" value="100" />
+  </at>
+  <!-- At 660s: incast burst ends -->
+  <at t="660">
+    <set-param module="isp_private0.private.host[*].app[0]"
+               par="thinkTime" value="exponential(0.5s)" />
+    <set-param module="isp_private0.private.host[*].app[0]"
+               par="idleInterval" value="exponential(2s)" />
+    <set-param module="isp_private0.private.host[*].app[0]"
+               par="numRequestsPerSession" value="intuniform(10,50)" />
+  </at>
+</scenario>
